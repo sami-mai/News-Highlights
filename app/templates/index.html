@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+{% block content%}
+
+  <div class="container">
+
+    <div class="row">
+      <!-- US Top Headline News -->
+      <h3> Top Headline News in the United States of America</h3>
+
+      <div>
+        {{macro.displayNewsList(us_news)}}
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- AU Top Headline News -->
+      <h3> Top Headline News in Australia</h3>
+
+      <div>
+        {{macro.displayNewsList(au_news)}}
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- DE Top Headline News -->
+      <h3> Top Headline News in Germany</h3>
+
+      <div>
+        {{macro.displayNewsList(de_news)}}
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- KR Top Headline News -->
+      <h3> Top Headline News South Korea</h3>
+
+      <div>
+        {{macro.displayNewsList(kr_news)}}
+      </div>
+    </div>
+
+  {%endblock%}
