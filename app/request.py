@@ -45,7 +45,7 @@ def process_results(news_list):
 
     news_results = []
     for news_item in news_list:
-        sourceName = news_item.get('source.name')
+        source = news_item.get('source.name')
         author = news_item.get('author')
         title = news_item.get('title')
         description = news_item.get('description')
@@ -54,7 +54,7 @@ def process_results(news_list):
         publishedAt = news_item.get('publishedAt')
 
         if url and urlToImage:
-            news_object = News(sourceName, author, title, description, url, urlToImage, publishedAt)
+            news_object = News(source, author, title, description, url, urlToImage, publishedAt)
             news_results.append(news_object)
-            
+
     return news_results
