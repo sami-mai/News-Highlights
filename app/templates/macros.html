@@ -1,7 +1,7 @@
 {% macro displayNewsList(news_list)%}
 
 
-  {% for news in news_list%}
+  {% for news in news_list[0:12]%}
   <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 news-card">
 
     <img src="{{news.urlToImage}}" alt="image" class="img-responsive" height="350" width="200">
@@ -11,7 +11,7 @@
     </div>
     <hr>
 
-    <p>{{news.description}}</p>
+    <p>{{news.description|truncate(120)}}</p>
     <br>
     <p>Reported by {{news.source}}. </p>
     <p>Written by {{news.author}} at {{news.publishedAt}}.</p>
