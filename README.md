@@ -1,6 +1,6 @@
 # NEWS HIGHLIGHTS
 This is an application that lists various news sources and previews of news articles from those sources.
-[This](...) is a web application that lists various News sources gotten from [News API](https://newsapi.org).
+[This](https://mai-online-news.herokuapp.com/) is a web application that lists various News sources gotten from [News API](https://newsapi.org).
 
 ### Author
   - By Samirah Maison
